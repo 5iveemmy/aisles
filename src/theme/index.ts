@@ -11,8 +11,18 @@ const breakpoints = {
   "2xl": "1536px",
 }
 
+export const tabStyles = {
+  parts: ["tabIndicator"],
+  baseStyle: {
+    tabIndicator: {
+      position: "none",
+    },
+  },
+}
+
 const components = {
   Button,
+  TabIndicator: tabStyles,
 }
 
 export const theme = extendTheme({
