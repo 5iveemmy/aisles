@@ -1,8 +1,30 @@
 import Layout from "@/layout"
-import { Box, Flex, Text } from "@chakra-ui/react"
+import {
+  Box,
+  Flex,
+  Tab,
+  TabIndicator,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+  Text,
+} from "@chakra-ui/react"
 import threeSticks from "@/assets/threeSticks.svg"
 import downArrow from "@/assets/downArrow.svg"
 import download from "@/assets/download.svg"
+import search from "@/assets/search.svg"
+import menu from "@/assets/menu.svg"
+import appSort from "@/assets/appSort.svg"
+import blackDownload from "@/assets/blackDownload.svg"
+import IconBox from "@/components/IconBox"
+import ColorCircle from "@/components/ColorCircle"
+
+const tabStyle = {
+  fontSize: "13px",
+  fontWeight: "700",
+  color: "#7C7B7B",
+}
 
 const Orders = () => {
   return (
@@ -34,15 +56,7 @@ const Orders = () => {
               <img src={downArrow} alt="Down arrow icon" />
             </Box>
           </Flex>
-          <Flex
-            bgColor="#018992"
-            borderRadius="10px"
-            p="10px 15px"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <img src={download} alt="download icon" />
-          </Flex>
+          <IconBox icon={download} bgColor="#018992" />
         </Flex>
       </Flex>
       <Flex bg="white" py="23px" px="50px" borderRadius="5px">
@@ -127,6 +141,57 @@ const Orders = () => {
           </Text>
         </Box>
       </Flex>
+      <Flex justifyContent="space-between" pt="28px">
+        <Text fontSize="23px" fontWeight="700" lineHeight="32px">
+          Orders Summary
+        </Text>
+        <Flex gap="8px">
+          <IconBox icon={search} bgColor="#FFFFFF" />
+          <IconBox icon={menu} bgColor="#FFFFFF" />
+          <IconBox icon={appSort} bgColor="#FFFFFF" />
+          <IconBox icon={blackDownload} bgColor="#FFFFFF" />
+        </Flex>
+      </Flex>
+      <Tabs defaultIndex={1}>
+        <TabList pb="18px">
+          <Tab sx={tabStyle} _selected={{ color: "#000000" }}>
+            All Orders
+          </Tab>
+          <Tab sx={tabStyle} _selected={{ color: "#000000" }} isDisabled>
+            <ColorCircle color="#018992" />
+            Ongoing
+          </Tab>
+          <Tab sx={tabStyle} _selected={{ color: "#000000" }} isDisabled>
+            <ColorCircle color="#90CAF9" /> Picked
+          </Tab>
+          <Tab sx={tabStyle} _selected={{ color: "#000000" }} isDisabled>
+            <ColorCircle color="#EA4335" />
+            Cancelled
+          </Tab>
+          <Tab sx={tabStyle} _selected={{ color: "#000000" }} isDisabled>
+            <ColorCircle color="#B40303" />
+            Declined
+          </Tab>
+          <Tab sx={tabStyle} _selected={{ color: "#000000" }} isDisabled>
+            <ColorCircle color="#AD8100" />
+            Failed
+          </Tab>
+          <Tab sx={tabStyle} isDisabled>
+            <ColorCircle color="#FFD600" />
+            Delivery in Progress
+          </Tab>
+          <Tab sx={tabStyle} isDisabled>
+            <ColorCircle color="#128C2D" />
+            Delivered
+          </Tab>
+        </TabList>
+        <TabIndicator height="3px" bg="#018992" />
+        <TabPanels>
+          <TabPanel>
+            <p>one!</p>
+          </TabPanel>
+        </TabPanels>
+      </Tabs>
     </Layout>
   )
 }
