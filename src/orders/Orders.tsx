@@ -367,7 +367,7 @@ const Orders = () => {
             Delivered
           </Tab>
         </TabList>
-        <TabIndicator height="3px" bg="#018992" ml="-23.5rem" />
+        <TabIndicator height="3px" bg="#018992" />
         <TabPanels>
           <TabPanel mt="20px">
             <StyledTable data={tableData} columns={tableColumns} />
