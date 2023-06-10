@@ -18,11 +18,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           display: "none",
         },
       }}
-      bgColor="#F0F0F0"
+      bgColor="#F6F6F6"
     >
       <Header />
       <Sidebar />
-      <GridItem overflowY="auto" area={"main"}>
+      <GridItem overflowY="auto" area={"main"} px="78px" pt="30px">
         {children}
       </GridItem>
     </Grid>

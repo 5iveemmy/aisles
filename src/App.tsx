@@ -1,11 +1,6 @@
-import { Text } from "@chakra-ui/react"
-import Layout from "./layout"
+import Orders from "./orders/Orders"
 function App() {
-  return (
-    <Layout>
-      <Text>yoo</Text>
-    </Layout>
-  )
+  return <Orders />
 }
 
 export default App
