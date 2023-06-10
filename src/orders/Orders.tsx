@@ -46,7 +46,7 @@ const tableData = [
     date: "10/04/2021",
     deliveryTime: "10/04/2021",
     orderId: "17394_157718054",
-    orderPrice: "N5,000",
+    orderPrice: "₦5,000",
     itemNo: 30,
     merchantName: "Jane Anne",
     channel: "Pay on Delivery",
@@ -56,7 +56,7 @@ const tableData = [
     date: "10/04/2021",
     deliveryTime: "10/04/2021",
     orderId: "17394_157718054",
-    orderPrice: "N5,000",
+    orderPrice: " ₦5,000",
     itemNo: 30,
     merchantName: "Jane Anne",
     channel: "Credit Card",
@@ -66,7 +66,7 @@ const tableData = [
     date: "10/04/2021",
     deliveryTime: "10/04/2021",
     orderId: "17394_157718054",
-    orderPrice: "N5,000",
+    orderPrice: " ₦5,000",
     itemNo: 30,
     merchantName: "Jane Anne",
     channel: "Credit Card",
@@ -76,7 +76,7 @@ const tableData = [
     date: "10/04/2021",
     deliveryTime: "10/04/2021",
     orderId: "17394_157718054",
-    orderPrice: "N5,000",
+    orderPrice: "₦5,000",
     itemNo: 30,
     merchantName: "Jane Anne",
     channel: "Credit Card",
@@ -86,7 +86,7 @@ const tableData = [
     date: "10/04/2021",
     deliveryTime: "10/04/2021",
     orderId: "17394_157718054",
-    orderPrice: "N5,000",
+    orderPrice: "₦5,000",
     itemNo: 30,
     merchantName: "Jane Anne",
     channel: "Credit Card",
@@ -96,7 +96,7 @@ const tableData = [
     date: "10/04/2021",
     deliveryTime: "10/04/2021",
     orderId: "17394_157718054",
-    orderPrice: "N5,000",
+    orderPrice: "₦5,000",
     itemNo: 30,
     merchantName: "Jane Anne",
     channel: "Credit Card",
@@ -174,7 +174,7 @@ const tableColumns: ColumnDef<tableDataType>[] = [
           position="absolute"
           top="2px"
           height="11px"
-          left="58px"
+          left="65px"
           justifyContent="center"
           alignItems="center"
         >
@@ -259,7 +259,7 @@ const Orders = () => {
             lineHeight="32px"
             color="#000000"
           >
-            N 0.00
+            ₦ 0.00
           </Text>
         </Box>
         <Box borderRight="1px solid #d7d7d8" pr="106px" pl="40px">

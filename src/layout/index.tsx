@@ -1,6 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/react"
 import Header from "./Header"
 import Sidebar from "./Sidebar"
+import "@fontsource-variable/quicksand"
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -19,6 +20,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         },
       }}
       bgColor="#F6F6F6"
+      fontFamily="'Quicksand Variable', sans-serif"
     >
       <Header />
       <Sidebar />
