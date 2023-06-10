@@ -1,4 +1,5 @@
 import { Grid, GridItem } from "@chakra-ui/react"
+import Header from "./Header"
 import Sidebar from "./Sidebar"
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -17,8 +18,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           display: "none",
         },
       }}
+      bgColor="#F0F0F0"
     >
-      <p>yooo</p>
+      <Header />
       <Sidebar />
       <GridItem overflowY="auto" area={"main"}>
         {children}
