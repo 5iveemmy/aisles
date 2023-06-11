@@ -26,6 +26,7 @@ const navList = [
   {
     text: "Orders",
     icon: orders,
+    active: true,
   },
   {
     text: "Products",
@@ -57,16 +58,21 @@ const Sidebar = () => {
       area={"sidebar"}
       maxH="100vh"
       pt="36px"
-      pl="76px"
+      pl="42px"
     >
       <img src={aisles} alt="Aisles logo" />
 
-      <List spacing={4} pt="40px">
-        {navList.map(({ text, icon }) => (
+      <List pt="40px" pr="50px">
+        {navList.map(({ text, icon, active }) => (
           <ListItem
             color="white"
             display="flex"
-            pt={text === "Settings" ? "160px" : "black"}
+            bgColor={active ? "rgb(217, 217, 217, 0.1)" : "none"}
+            borderLeft={active ? "3px solid#52BD94" : "none"}
+            borderRightRadius="20px"
+            fontWeight={active ? "bold" : "none"}
+            p="14px"
+            pt={text === "Settings" ? "160px" : "14px"}
             gap="22px"
             fontSize="18px"
             key={text}
