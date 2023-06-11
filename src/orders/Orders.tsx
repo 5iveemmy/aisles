@@ -242,7 +242,7 @@ const Orders = () => {
         </Flex>
       </Flex>
       <Flex bg="white" py="23px" px="50px" borderRadius="5px">
-        <Box borderRight="1px solid #d7d7d8" pr="10%">
+        <Box borderRight="1px solid #d7d7d8" pr="11%">
           <Text
             fontSize="11px"
             color="#343538"
@@ -262,7 +262,7 @@ const Orders = () => {
             ₦ 0.00
           </Text>
         </Box>
-        <Box borderRight="1px solid #d7d7d8" pr="10%" pl="40px">
+        <Box borderRight="1px solid #d7d7d8" pr="11%" pl="40px">
           <Text
             fontSize="11px"
             color="#343538"
@@ -274,7 +274,7 @@ const Orders = () => {
             Deliverd Orders
           </Text>
           <Text
-            fontSize="11px"
+            fontSize="26px"
             fontWeight="700"
             lineHeight="32px"
             color="#000000"
@@ -282,7 +282,7 @@ const Orders = () => {
             654
           </Text>
         </Box>
-        <Box borderRight="1px solid #d7d7d8" pr="10%" pl="40px">
+        <Box borderRight="1px solid #d7d7d8" pr="11%" pl="40px">
           <Text
             fontSize="11px"
             color="#343538"
