@@ -244,7 +244,7 @@ const Orders = () => {
       <Flex bg="white" py="23px" px="50px" borderRadius="5px">
         <Box borderRight="1px solid #d7d7d8" pr="10%">
           <Text
-            fontSize="13px"
+            fontSize="11px"
             color="#343538"
             fontWeight="500"
             lineHeight="24px"
@@ -264,7 +264,7 @@ const Orders = () => {
         </Box>
         <Box borderRight="1px solid #d7d7d8" pr="10%" pl="40px">
           <Text
-            fontSize="13px"
+            fontSize="11px"
             color="#343538"
             fontWeight="500"
             lineHeight="24px"
@@ -274,7 +274,7 @@ const Orders = () => {
             Deliverd Orders
           </Text>
           <Text
-            fontSize="26px"
+            fontSize="11px"
             fontWeight="700"
             lineHeight="32px"
             color="#000000"
@@ -284,7 +284,7 @@ const Orders = () => {
         </Box>
         <Box borderRight="1px solid #d7d7d8" pr="10%" pl="40px">
           <Text
-            fontSize="13px"
+            fontSize="11px"
             color="#343538"
             fontWeight="500"
             lineHeight="24px"
@@ -304,7 +304,7 @@ const Orders = () => {
         </Box>
         <Box pl="40px">
           <Text
-            fontSize="13px"
+            fontSize="11px"
             color="#343538"
             fontWeight="500"
             lineHeight="24px"
