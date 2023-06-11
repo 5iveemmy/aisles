@@ -241,8 +241,16 @@ const Orders = () => {
           <IconBox icon={download} bgColor="#018992" />
         </Flex>
       </Flex>
-      <Flex bg="white" py="23px" px="50px" borderRadius="5px">
-        <Box borderRight="1px solid #d7d7d8" pr="11%">
+      <Flex
+        bg="white"
+        py="23px"
+        pl="20px"
+        pr="50px"
+        borderRadius="5px"
+        gap="20px"
+        justifyContent="space-around"
+      >
+        <Box borderRight="1px solid #d7d7d8" pr="9%">
           <Text
             fontSize="11px"
             color="#343538"
@@ -262,7 +270,7 @@ const Orders = () => {
             ₦ 0.00
           </Text>
         </Box>
-        <Box borderRight="1px solid #d7d7d8" pr="11%" pl="40px">
+        <Box borderRight="1px solid #d7d7d8" pr="10%">
           <Text
             fontSize="11px"
             color="#343538"
@@ -282,7 +290,7 @@ const Orders = () => {
             654
           </Text>
         </Box>
-        <Box borderRight="1px solid #d7d7d8" pr="11%" pl="40px">
+        <Box borderRight="1px solid #d7d7d8" pr="10%">
           <Text
             fontSize="11px"
             color="#343538"
@@ -302,7 +310,7 @@ const Orders = () => {
             34
           </Text>
         </Box>
-        <Box pl="40px">
+        <Box>
           <Text
             fontSize="11px"
             color="#343538"
